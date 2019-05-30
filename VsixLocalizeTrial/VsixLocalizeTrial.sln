@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VsixLocalizeTrial", "VsixLocalizeTrial.csproj", "{A95E9E6B-6ACD-4A30-B2A1-3F974A3CE8E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A95E9E6B-6ACD-4A30-B2A1-3F974A3CE8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95E9E6B-6ACD-4A30-B2A1-3F974A3CE8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95E9E6B-6ACD-4A30-B2A1-3F974A3CE8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95E9E6B-6ACD-4A30-B2A1-3F974A3CE8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B455674-C9BF-4002-842E-76437E5AE1C4}
+	EndGlobalSection
+EndGlobal
