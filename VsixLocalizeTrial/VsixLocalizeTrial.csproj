@@ -107,6 +107,14 @@
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="es-ES\extension.vsixlangpack">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ja-JP\extension.vsixlangpack">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Check16.png" />
     <Content Include="Resources\CheckBlue16.png" />
     <Content Include="Resources\CheckRed16.png" />

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+	<Metadata>
+		<DisplayName>VsixLocalizeTrial</DisplayName>
+		<Description>Paquete de prueba de Vsix para probar la localización de la localización vsix.</Description>
+		<MoreInfo> https://www.emotionsoft.net/ </MoreInfo>
+		<License>Eula.rtf</License>
+		<ReleaseNotes>ReleaseNotes.rtf</ReleaseNotes>
+		<Icon>CheckRed16.png</Icon>
+	</Metadata>
+</PackageLanguagePackManifest>
