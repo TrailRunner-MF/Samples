@@ -72,8 +72,8 @@ namespace VsixLocalizeTrial
         /// <param name="package">Owner package, not null.</param>
         public static async Task InitializeAsync(AsyncPackage package)
         {
-            // Switch to the main thread - the call to AddCommand in TestCommand01's constructor requires
-            // the UI thread.
+            // Switch to the main thread - the call to AddCommand in TestCommand01's constructor
+            // requires the UI thread.
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(package.DisposalToken);
 
             OleMenuCommandService commandService = await package.GetServiceAsync(typeof(IMenuCommandService)) as OleMenuCommandService;
