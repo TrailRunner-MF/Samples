@@ -59,7 +59,7 @@
 					<ButtonText>TestCommand01を呼び出す</ButtonText>
 				</Strings>
       </Button>
-    </Buttons>
+		</Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
     <Bitmaps>

@@ -1,0 +1,7 @@
+C:\Users\雅俊\Source\Repos\Experimental\Template\SimpleProjectTemplate\SimpleProjectTemplate\bin\Debug\ProjectTemplates\CSharp\1033\SimpleProjectTemplate.zip
+C:\Users\雅俊\Source\Repos\Experimental\Template\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.csprojAssemblyReference.cache
+C:\Users\雅俊\Source\Repos\Experimental\Template\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\_EmptyResource.resources
+C:\Users\雅俊\Source\Repos\Experimental\Template\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.csproj.GenerateResource.cache
+C:\Users\雅俊\Source\Repos\Experimental\Template\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\CSharp\1033\SimpleProjectTemplate.zip
+C:\Users\雅俊\Source\Repos\Experimental\Template\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.dll
+C:\Users\雅俊\Source\Repos\Experimental\Template\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.pdb
