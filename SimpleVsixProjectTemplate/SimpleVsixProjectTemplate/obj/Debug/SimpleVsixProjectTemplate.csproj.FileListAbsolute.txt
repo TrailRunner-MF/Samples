@@ -1,0 +1,17 @@
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleProjectTemplate.zip
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleVsixProjectTemplate.dll
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleVsixProjectTemplate.pdb
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleVsixProjectTemplate.pkgdef
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleVsixProjectTemplate.vsix
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\extension.vsixmanifest
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.csprojAssemblyReference.cache
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\_EmptyResource.resources
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.csproj.GenerateResource.cache
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.csproj.CoreCompileInputs.cache
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.dll
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.pdb
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.pkgdef
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.latest.pkgdef
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\extension.vsixmanifest
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\files.json
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\createTemplateManifests.cache
