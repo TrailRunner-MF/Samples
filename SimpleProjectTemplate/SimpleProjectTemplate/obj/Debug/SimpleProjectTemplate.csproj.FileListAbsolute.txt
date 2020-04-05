@@ -12,3 +12,10 @@ C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleProjectTemplate\S
 C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\CSharp\1033\SimpleProjectTemplate.zip
 C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.dll
 C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.pdb
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Samples\SimpleProjectTemplate\SimpleProjectTemplate\bin\Debug\ProjectTemplates\CSharp\1033\SimpleProjectTemplate.zip
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Samples\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\_EmptyResource.resources
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Samples\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.csproj.GenerateResource.cache
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Samples\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.csproj.CoreCompileInputs.cache
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Samples\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\CSharp\1033\SimpleProjectTemplate.zip
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Samples\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.dll
+C:\Users\雅俊\Source\Repos\TrailRunner-MF\Samples\SimpleProjectTemplate\SimpleProjectTemplate\obj\Debug\SimpleProjectTemplate.pdb
