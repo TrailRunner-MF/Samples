@@ -7,6 +7,9 @@ namespace $safeprojectname$
 {
 	public class Class1
 	{
-		Console.WriteLine("Hello World.");
+		public void Hello()
+		{
+			Console.WriteLine("Hello World.");
+		}
 	}
 }

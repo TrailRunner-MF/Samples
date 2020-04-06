@@ -1,22 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
-  <TemplateData>
-    <Name>SimpleProjectTemplate</Name>
-    <Description>SimpleProjectTemplate</Description>
-    <Icon>SimpleProjectTemplate.ico</Icon>
-    <ProjectType>CSharp</ProjectType>
-    <LanguageTag>csharp</LanguageTag>
-    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
-    <SortOrder>1000</SortOrder>
-    <TemplateID>55e51747-2dd7-4745-bd0b-c142111483fe</TemplateID>
-    <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>SimpleProjectTemplate</DefaultName>
-    <ProvideDefaultName>true</ProvideDefaultName>
-  </TemplateData>
-  <TemplateContent>
-    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
-    </Project>
-  </TemplateContent>
+    <TemplateData>
+        <Name>SimpleProjectTemplate</Name>
+        <Description>Test ProjectTemplate to prove project template creating process.</Description>
+        <Icon>SimpleProjectTemplate.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <LanguageTag>csharp</LanguageTag>
+        <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+        <SortOrder>1000</SortOrder>
+        <TemplateID>39c056a9-2d65-491c-8eda-5033d78ca027</TemplateID>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>SimpleProjectTemplate</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+	    <LanguageTag>CSharp</LanguageTag>
+	    <PlatformTag>Windows</PlatformTag>
+	    <ProjectTypeTag>Console</ProjectTypeTag>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+            <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
 </VSTemplate>
