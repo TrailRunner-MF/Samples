@@ -8,7 +8,7 @@
     <LanguageTag>csharp</LanguageTag>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
-    <TemplateID>ad4d7543-7b90-4bac-ba1b-f0d12454144b</TemplateID>
+    <TemplateID>55e51747-2dd7-4745-bd0b-c142111483fe</TemplateID>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>SimpleProjectTemplate</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
