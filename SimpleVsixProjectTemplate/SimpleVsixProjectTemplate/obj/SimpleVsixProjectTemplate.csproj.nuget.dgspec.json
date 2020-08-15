@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\雅俊\\Source\\Repos\\TrailRunner-MF\\Experimental\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj": {}
+    "C:\\Users\\Masatoshi\\Source\\Repos\\TrailRunner-MF\\Samples\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\雅俊\\Source\\Repos\\TrailRunner-MF\\Experimental\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj": {
+    "C:\\Users\\Masatoshi\\Source\\Repos\\TrailRunner-MF\\Samples\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\雅俊\\Source\\Repos\\TrailRunner-MF\\Experimental\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj",
+        "projectUniqueName": "C:\\Users\\Masatoshi\\Source\\Repos\\TrailRunner-MF\\Samples\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj",
         "projectName": "SimpleVsixProjectTemplate",
-        "projectPath": "C:\\Users\\雅俊\\Source\\Repos\\TrailRunner-MF\\Experimental\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj",
-        "packagesPath": "C:\\Users\\雅俊\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\雅俊\\Source\\Repos\\TrailRunner-MF\\Experimental\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\obj\\",
+        "projectPath": "C:\\Users\\Masatoshi\\Source\\Repos\\TrailRunner-MF\\Samples\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate.csproj",
+        "packagesPath": "C:\\Users\\Masatoshi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Masatoshi\\Source\\Repos\\TrailRunner-MF\\Samples\\SimpleVsixProjectTemplate\\SimpleVsixProjectTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\雅俊\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Masatoshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\雅俊\\Source\\Repos\\East\\NugetServer\\ScenarioTest080\\emotionsoft.east.scenariotest": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

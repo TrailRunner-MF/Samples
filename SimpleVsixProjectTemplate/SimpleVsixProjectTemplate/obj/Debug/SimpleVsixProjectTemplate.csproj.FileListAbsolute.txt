@@ -15,3 +15,15 @@ C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTempla
 C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\extension.vsixmanifest
 C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\files.json
 C:\Users\雅俊\Source\Repos\TrailRunner-MF\Experimental\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\createTemplateManifests.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleProjectTemplate.zip
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleVsixProjectTemplate.dll
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleVsixProjectTemplate.pdb
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\bin\Debug\SimpleVsixProjectTemplate.pkgdef
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\_EmptyResource.resources
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.csproj.GenerateResource.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.csproj.CoreCompileInputs.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.dll
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.pdb
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.pkgdef
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\SimpleVsixProjectTemplate.latest.pkgdef
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\SimpleVsixProjectTemplate\SimpleVsixProjectTemplate\obj\Debug\extension.vsixmanifest
