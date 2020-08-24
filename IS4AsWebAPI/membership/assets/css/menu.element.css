@@ -1,0 +1,117 @@
+.orange {
+    background: #f90;
+}
+.green {
+    background: #3aa643;
+}
+.gray {
+    background: #bfbfbf;
+}
+
+
+.link,
+.link:hover,
+.link:active { text-decoration:none; color:#0033cc; outline: none;}
+.link:visited { color: #552880;}
+.link:hover { text-decoration: underline; }
+
+
+.mg-btn-edit{
+    margin-top:-10px;
+    margin-right:0;
+    float:right;
+}
+.panel-title, panel-title i{
+    font-size:20px !important;
+}
+
+.btn-edit {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-edit:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-edit:focus, .btn-edit.focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+
+.btn-edit:not(:disabled):not(.disabled):active:focus, .btn-edit:not(:disabled):not(.disabled).active:focus,
+.show > .btn-edit.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+
+.btn-outline-edit {
+  color: #6c757d;
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
+}
+
+.btn-outline-edit:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-edit:focus, .btn-outline-edit.focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+
+.btn-orange {
+  color: #fff;
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+.btn-orange:focus,
+.btn-orange.focus {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  cursor:pointer;
+
+}
+.btn-orange:hover {
+  cursor:pointer;
+  color: #fff;
+  background-color: #ffc266;
+  border-color: #ffc266;
+}
+
+
+.menu-section{
+    margin-bottom: 60px;
+    position: relative;
+    padding:0;
+}
+
+
+h4.menu-section-title{ 
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e6e6e6;
+    text-align:left;
+}
+
+.menu-section-body{
+  padding: 0;
+}
+
+
+@media (max-width: 991px) {
+    .text-right-sm {
+        text-align:right !important;
+    }
+
+}

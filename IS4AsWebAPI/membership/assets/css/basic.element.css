@@ -1,0 +1,150 @@
+@charset "shift-jis";
+
+ul,ol {
+    list-style-type: none;
+}
+
+input {
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+
+a:visited {
+    color: #552880;
+}
+
+
+.formList {
+    margin-top: 7px;
+}
+
+.formList input[type="text"] {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 7px;
+}
+
+.formList select {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+
+.formList input[type="radio"] {
+    display: none;
+    margin-bottom: 7px;
+}
+.formList input[type="checkbox"] {
+    display: none;
+    margin-bottom: 7px;
+
+}
+
+
+.formList label{
+  min-height: 22px;
+  display: block;
+  padding: 3px 0 4px 30px;
+  cursor: pointer;
+  position: relative;
+  font-weight:normal;
+}
+
+.formList input[type="radio"] + label:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/n_icon_radioBtn.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.formList input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/n_icon_radioBtn.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+}
+
+.formList input[type="checkbox"] + label:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/n_icon_checkBox.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.formList input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/n_icon_checkBox.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+}
+
+/* セレクトボックス用 */
+.n_selectBox {
+    text-align: right;
+    position: relative;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+}
+.n_selectBox select {
+    appearance: none;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 5px 50px 5px 13px;
+    border: none;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0);
+    z-index: 100;
+}
+
+.n_selectBox .n_selectBtn {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #e6e6e6;
+    z-index: 1;
+}
+
+
+.n_selectBox .n_selectBtn span {
+    padding-top:12px;
+    font-size:16px;
+    padding-right:10px;
+    color:#696969;
+}
+
+.cursor-pointer {cursor: pointer !important;}
+.cursor-default {cursor: default !important;}
