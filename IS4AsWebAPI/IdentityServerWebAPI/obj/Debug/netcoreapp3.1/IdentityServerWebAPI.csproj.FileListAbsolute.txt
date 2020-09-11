@@ -106,7 +106,6 @@ C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServe
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.csprojAssemblyReference.cache
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.AssemblyInfoInputs.cache
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.AssemblyInfo.cs
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.csproj.CoreCompileInputs.cache
@@ -118,3 +117,4 @@ C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServe
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.dll
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.pdb
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.genruntimeconfig.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\IdentityServerWebAPI\obj\Debug\netcoreapp3.1\IdentityServerWebAPI.csprojAssemblyReference.cache

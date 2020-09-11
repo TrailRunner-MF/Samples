@@ -87,3 +87,4 @@ C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\frontpage\obj
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\frontpage\obj\Debug\netcoreapp3.1\frontpage.dll
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\frontpage\obj\Debug\netcoreapp3.1\frontpage.pdb
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\frontpage\obj\Debug\netcoreapp3.1\frontpage.genruntimeconfig.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\IS4AsWebAPI\frontpage\obj\Debug\netcoreapp3.1\frontpage.csprojAssemblyReference.cache

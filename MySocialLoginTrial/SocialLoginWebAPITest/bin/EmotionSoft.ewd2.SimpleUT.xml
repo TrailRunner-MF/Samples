@@ -1,0 +1,1712 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmotionSoft.ewd2.SimpleUT</name>
+    </assembly>
+    <members>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.AutoMemberInfoBase.OnParamValueConverting">
+            <summary>
+            データテーブル上の文字列で与えられたパラメータ値を実際の型にコンバートする際の
+            カスタム処理。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.AutoMemberInfoBase.OnParamReturnValueConverting">
+            <summary>
+            戻り値引数の値を文字列表現に変換する際のカスタム処理。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.AutoMemberInfoBase.OnReturnValueConverting">
+            <summary>
+            メソッドまたはプロパティ自身の戻り値を文字列表現に変換する際のカスタム処理。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.AutoMethodController.GetMethodInfo(System.String)">
+            <summary>
+            指定されたメソッド情報を生成する。
+            </summary>
+            <param name="argMethName">検索対象メソッド名</param>
+            <returns>メソッド情報を返す。ただし、無効なメソッド名が指定された
+            場合には、nullを返す。</returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.AutoMethodInfo.#ctor(System.Object,System.Reflection.MethodInfo)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argInstance">テスト対象インスタンス</param>
+            <param name="argInfo">テスト対象メソッド情報</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.AutoTestUtil">
+            <summary>
+            ユーティリティーメソッドの保持クラス
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.AutoTestUtil.DefaultConversion(System.String,System.Type)">
+            <summary>
+            既定を型変換を行う。
+            </summary>
+            <param name="argValue">文字列で指定された元の値</param>
+            <param name="argType">変換する型</param>
+            <returns>指定された型に変換された値</returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.AutoTestUtil.DefaultStringConversion(System.Object,System.Type)">
+            <summary>
+            既定の文字列への型変換を行う
+            </summary>
+            <param name="argValue">変換対象となる値</param>
+            <param name="argType">変換後の型</param>
+            <returns>文字列に変換された値</returns>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.ReturnValueCoverting">
+            <summary>
+            戻り値をテスト結果ビューワに表示する際の型コンバート用デリゲート
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.MemberType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.TypeConvertingEventArgs">
+            <summary>
+            メソッドやプロパティの値の型変換用イベントの制御用引数型
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.Constants.ParameterDirection">
+            <summary>
+            パラメータの入出力の方向を識別する。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.ParameterInfoController.OnParamValueConverting">
+            <summary>
+            データテーブル上の文字列で与えられたパラメータ値を実際の型にコンバートする際の
+            カスタム処理。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.ParameterInfoController.OnParamReturnValueConverting">
+            <summary>
+            戻り値引数の値を文字列表現に変換する際のカスタム処理。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.ParameterInfoController.#ctor(EmotionSoft.ewd2.SimpleUT.AutoMemberInfoBase,EmotionSoft.ewd2.SimpleUT.DstParameterInfo.TblParameterInfoDataTable,EmotionSoft.ewd2.SimpleUT.ParamValueCoverting,EmotionSoft.ewd2.SimpleUT.ParamValueCoverting)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argTable">パラメータ情報を保持するデータテーブル</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.ParameterInfoController.GetParameterValue">
+            <summary>
+            入力値をパラメータの型にキャストして、オブジェクト配列化して返す。
+            </summary>
+            <returns>入力値のオブジェクト配列</returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.ParameterInfoController.SetOutputParameterValue(System.Object[])">
+            <summary>
+            オブジェクト配列値をパラメータ戻り値としてセットする。
+            </summary>
+            <param name="argParams">メソッドコール後のパラメータ値の配列</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.DstParameterInfo">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.DstParameterInfo.TblParameterInfoDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.DstParameterInfo.TblParameterInfoRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.DstParameterInfo.TblParameterInfoRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.DataColumnType">
+            <summary>
+            FreeTextFixture内部からデータのUI出力を指定する際のUI上での項目の種別を示す。 
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.DataColumnType.BoundField">
+            <summary>
+            データ項目をテキストで表示される項目として描画される。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.DataColumnType.CheckBoxkField">
+            <summary>
+            データ項目が成否判定可能な型である場合に、CheckBoxとして描画される。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.DataColumnType.ImageField">
+            <summary>
+            データ項目が画像として出力可能か型である場合に、画像を出力する。
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.HorzlAlign">
+            <summary>
+            FreeTextFixture内部からデータのUI出力を指定する際のUI上での項目の水平方向の配置指定。 
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.HorzlAlign.NotSet">
+            <summary>
+            未設定
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.HorzlAlign.Left">
+            <summary>
+            コンテナの内容を左揃えで配置
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.HorzlAlign.Center">
+            <summary>
+            コンテナの内容を中央揃えで配置
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.HorzlAlign.Right">
+            <summary>
+            コンテナの内容を右揃えで配置
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.HorzlAlign.Justify">
+            <summary>
+            コンテナの内容を均一に広げられ、左右の余白に揃えて配置
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.VertAlign">
+            <summary>
+            FreeTextFixture内部からデータのUI出力を指定する際のUI上での項目の垂直方向の配置指定。 
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.VertAlign.NotSet">
+            <summary>
+            未設定
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.VertAlign.Top">
+            <summary>
+            テキストまたはオブジェクトは、それらを含むコントロールの上部に揃えて配置
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.VertAlign.Middle">
+            <summary>
+            テキストまたはオブジェクトは、それらを含むコントロールの中央に揃えて配置
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.VertAlign.Bottom">
+            <summary>
+            テキストまたはオブジェクトは、それらを含むコントロールの下部に揃えて配置
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes">
+            <summary>
+            画面UIに対して任意のデータの出力指定を行う場合、個々の項目に関する列幅や書式、
+            ヘッダタイトル項目内容等の指定を構造化したもの。
+            WinForm/ WebFornに関係なく出力指示情報を共通のフォーマットで格納する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.FieldType">
+            <summary>
+            出力するデータ項目列の型
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.DataField">
+            <summary>
+            バインドするデータの出力対象データ項目名
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.Width">
+            <summary>
+            出力時のデータ項目表示幅。出力先がGrid系である場合に評価される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.HeaderText">
+            <summary>
+            データ項目の出力時のヘッダ部タイトル項目の内容。出力先がGrid系である場合に評価される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.Format">
+            <summary>
+            データ項目の出力時の書式。出力対象項目が数値または日付値の場合に評価される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.HorizontalAlign">
+            <summary>
+            データ項目の出力時の水平方向の配置指定。 
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.VerticalAlign">
+            <summary>
+            データ項目の出力時の垂直方向の配置指定。 
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.NullDisplayText">
+            <summary>
+            データ値がnullである場合の表示文字列。FieldType=BoundFieldの場合のみ評価される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.DataImageUrlField">
+            <summary>
+            imageField表示用属性。WebアプリケーションにおけるDBに格納された画像の出力に使用する項目。
+            この項目を次のDataImageUrlFormatStringと組み合わせる事により、実際の画像出力用URLを
+            生成する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.DataImageUrlFormatString">
+            <summary>
+            imageField表示用属性。WebアプリケーションにおけるDBに格納された画像の出力に使用する項目。
+            この項目の{0}で現されるプレースホルダに次のDataImageUrlFieldを組み込む事により、 実際の
+            画像出力用URLを生成する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.AlternateText">
+            <summary>
+            imageField表示用属性。WebにおけるAlternateText。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.#ctor(EmotionSoft.ewd2.SimpleUT.DataColumnType,System.String,System.Int32,System.String,System.String,EmotionSoft.ewd2.SimpleUT.HorzlAlign,EmotionSoft.ewd2.SimpleUT.VertAlign,System.String)">
+            <summary>
+            データ列定義オブジェクトを生成する。
+            </summary>
+            <param name="argType">出力対象データ項目名型</param>
+            <param name="argDataField"
+            >バインドするデータの出力対象データ項目名
+            </param>
+            <param name="argWidth">
+            出力時のデータ項目表示幅。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argHeaderText">
+            出力時のヘッダ部タイトル項目の内容。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argFormat">
+            データ項目の出力時の書式。出力対象項目が数値または日付値の場合に評価される。
+            </param>
+            <param name="argHorzAlign">データ項目の出力時の水平方向の文字位置</param>
+            <param name="argVertAlign">データ項目の出力時の垂直方向の文字位置</param>
+            <param name="argNullText">
+            出力項目がNullである場合の表示内容。(何も表示しない場合には空白を指定)
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.#ctor(EmotionSoft.ewd2.SimpleUT.DataColumnType,System.String)">
+            <summary>
+            通常のTextField(=WinForm)/ BoundField(=WebForm)用のデータ列定義を行う
+            </summary>
+            <param name="argDataField"
+            >バインドするデータの出力対象データ項目名
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.#ctor(EmotionSoft.ewd2.SimpleUT.DataColumnType,System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            (Web)ImageField用のデータ列定義を行う
+            </summary>
+            <param name="argType">
+            原則として必ずImageFieldを指定する。
+            </param>
+            <param name="argDataField"
+            >バインドするデータの出力対象データ項目名
+            </param>
+            <param name="argWidth">
+            出力時のデータ項目表示幅。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argHeaderText">
+            出力時のヘッダ部タイトル項目の内容。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argImageUrlField">
+            WebアプリケーションにおけるDBに格納された画像の出力に使用する項目。
+            </param>
+            <param name="argImageUrlFormat">
+            WebアプリケーションにおけるDBに格納された画像の出力時に出力用のurlを事前に指定する。
+            argImageUrlFieldはこのプロパティ値の{0}プレースホルダに配置されてurlを生成する。
+            </param>
+            <param name="argAltText">imageField表示用属性。WebにおけるAlternateText。</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributes.ToString">
+            <summary>
+            画面UIに対する任意のデータの出力指定を文字列として出力する。
+            </summary>
+            <returns>画面UIに対する任意のデータの出力指定の文字列表現</returns>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList">
+            <summary>
+            FreeTextFixture内部からデータのUI出力を指定する際に、個々のデータ項目属性を
+            指定したクラスのリスト。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList.AddBoundField(System.String,System.Int32,System.String,System.String,EmotionSoft.ewd2.SimpleUT.HorzlAlign,EmotionSoft.ewd2.SimpleUT.VertAlign,System.String)">
+            <summary>
+            通常のTextField(=WinForm)/ BoundField(=WebForm)用のデータ列定義をリストに追加する。
+            </summary>
+            <param name="argDataField">
+            バインドするデータの出力対象データ項目名
+            </param>
+            <param name="argWidth">
+            出力時のデータ項目表示幅。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argHeaderText">
+            出力時のヘッダ部タイトル項目の内容。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argFormat">
+            データ項目の出力時の書式。出力対象項目が数値または日付値の場合に評価される。
+            </param>
+            <param name="argHorzAlign">データ項目の出力時の水平方向の文字位置</param>
+            <param name="argVertAlign">データ項目の出力時の垂直方向の文字位置</param>
+            <param name="argNullText">
+            出力項目がNullである場合の表示内容。(何も表示しない場合には空白を指定)
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList.AddBoundField(System.String)">
+            <summary>
+            通常のTextField(=WinForm)/ BoundField(=WebForm)用のデータ列定義をリストに追加する。
+            </summary>
+            <param name="argDataField"
+            >バインドするデータの出力対象データ項目名
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList.AddCheckBoxField(System.String,System.Int32,System.String)">
+            <summary>
+            通常のTextField/BoundField(=WebForm)用、またはCheckBoxField用のデータ列定義を行う
+            </summary>
+            <param name="argDataField"
+            >バインドするデータの出力対象データ項目名
+            </param>
+            <param name="argWidth">
+            出力時のデータ項目表示幅。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argHeaderText">
+            出力時のヘッダ部タイトル項目の内容。出力先がGrid系である場合に評価される
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList.AddCheckBoxField(System.String)">
+            <summary>
+            通常のTextField(=WinForm)/ BoundField(=WebForm)用のデータ列定義をリストに追加する。
+            </summary>
+            <param name="argDataField"
+            >バインドするデータの出力対象データ項目名
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList.AddWebImageField(System.String,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            WebFormのImageField用のデータ列定義をリストに追加する。
+            </summary>
+            <param name="argDataField"
+            >バインドするデータの出力対象データ項目名
+            </param>
+            <param name="argWidth">
+            出力時のデータ項目表示幅。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argHeaderText">
+            出力時のヘッダ部タイトル項目の内容。出力先がGrid系である場合に評価される
+            </param>
+            <param name="argImageUrlField">
+            WebアプリケーションにおけるDBに格納された画像の出力に使用する項目。
+            </param>
+            <param name="argImageUrlFormat">
+            WebアプリケーションにおけるDBに格納された画像の出力時に出力用のurlを事前に指定する。
+            argImageUrlFieldはこのプロパティ値の{0}プレースホルダに配置されてurlを生成する。
+            </param>
+            <param name="argAltText">imageField表示用属性。WebにおけるAlternateText。</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameter">
+            <summary>
+            SqlDataSourceパラメータに引き渡すParameterの定義
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameter.ParameterName">
+            <summary>
+            パラメータ名
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameter.SessionFieldName">
+            <summary>
+            SqlDataSourceのパラメータはFreeTestPanelではSessionParameterとして
+            定義する。この際にSession変数として格納する値。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameter.Value">
+            <summary>
+            パラメータに設定する値
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameter.Type">
+            <summary>
+            パラメータのデータ型。パラメータ値より動的に取得する。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameter.#ctor(System.String,System.String,System.Object)">
+            <summary>
+            Parameterオブジェクトを新規に生成する。
+            </summary>
+            <param name="argName">パラメータ名</param>
+            <param name="argSessionFieldName">
+            SqlDataSourceのパラメータはFreeTestPanelではSessionParameterとして
+            定義する。この際にSession変数として格納する値。
+            </param>
+            <param name="argValue">パラメータに設定する値</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList">
+            <summary>
+            SqlDataSourceパラメータに引き渡すParameterの定義のリスト
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList.AddParameter(System.String,System.String,System.Object)">
+            <summary>
+            Parameterオブジェクトを新規に生成する。
+            </summary>
+            <param name="argName">
+            パラメータ名。SQLサーバ用T-SQLの場合、接頭辞の『@』は付けない。
+            </param>
+            <param name="argSessionFieldName">
+            SqlDataSourceのパラメータはFreeTestPanelではSessionParameterとして
+            定義する。この際にSession変数として格納する値。
+            </param>
+            <param name="argValue">パラメータに設定する値</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList.AddParameter(System.String,System.Object)">
+            <summary>
+            Parameterオブジェクトを新規に生成する。
+            </summary>
+            <param name="argName">
+            パラメータ名。SQLサーバ用T-SQLの場合、接頭辞の『@』は付けない。
+            </param>
+            <param name="argValue">パラメータに設定する値</param>
+            <remarks>Sessionパラメータ用のセッション変数の基底部は
+            argNameと同じ名前が付けられる。</remarks>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestClass">
+            <summary>
+            FreeTestにて、テストメソッドを定義するクラスである事を宣言する。
+            この宣言により、FreeTestUI側で、このクラス内のテストメソッドを
+            画面上のドロップダウンリストなどのUIより選択可能にする。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClass.Comment">
+            <summary>
+            当該テスト対象クラスに関する説明・解説等のコメント
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClass.Alias">
+            <summary>
+            当該テスト対象クラスの別名
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClass.#ctor(System.String,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argAlias">当該テスト対象クラスのエリアス</param>
+            <param name="argComment">
+            当該テスト対象クラスに関する説明・解説等のコメント
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClass.#ctor(System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argAlias">当該テスト対象クラスのエリアス</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClass.#ctor">
+            <summary>
+            コンストラクタ。このコンストラクタを使用する場合、テストクラスの説明文は
+            付与されない。
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestMethod">
+            <summary>
+            FreeTestにて、テストメソッドである事を宣言する。
+            この宣言により、FreeTestUI側で、このテストメソッドを画面上の
+            ドロップダウンリストなどのUIより選択可能にする。
+            また、テストメソッドの選択により、引数定義・入力用のUI(GridView)
+            やテストパターン選択用のラジオボタングループ初期化される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethod.Comment">
+            <summary>
+            当該テスト対象メソッドに関する説明・解説等のコメント
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethod.Alias">
+            <summary>
+            当該テスト対象メソッドの別名
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethod.#ctor(System.String,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argAlias">当該テスト対象メソッドのエリアス</param>
+            <param name="argComment">
+            当該テスト対象メソッドに関する説明・解説等のコメント
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethod.#ctor(System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argAlias">当該テスト対象メソッドのエリアス</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethod.#ctor">
+            <summary>
+            コンストラクタ。このコンストラクタを使用する場合、テストメソッドの説明文は
+            付与されない。
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestPattern">
+            <summary>
+            FreeTestにて、テストメソッドのテストパターンを示す2次元の文字列
+            配列である事を宣言する。
+            この宣言によりFreeTestUI側で対象となるテストメソッドがUI上で
+            選択された場合に、他のラジオボタングループなどのUIにこのメソッドが
+            作成するテストパターンを表示して、選択に応じて引数設定UI上での
+            引数値を初期化する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPattern.TargetMethod">
+            <summary>
+            テストパターンを設定するテストメソッド名。必須入力属性。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPattern.UseAlias">
+            <summary>
+            個々のテストパターンにエリアスを使用するか？
+            </summary>
+            <remarks>この値がtrueに設定されている場合には、テストパターン要素
+            (引数値設定用文字列)の２つ後ろに、当該テストパターンのエリアスを
+            別途追加する。
+            </remarks>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPattern.AddCommentAtBottom">
+            <summary>
+            個々のテストパターンの最後尾要素を、当該テストパターンに関する
+            説明・解説等のコメントに指定するか？
+            </summary>
+            <remarks>この値がtrueに設定されている場合には、テストパターン要素
+            (引数値設定用文字列)の１つ後ろに、当該テストパターンに関する
+            コメント文を別途追加する。
+            </remarks>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestPattern.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argMethod">当該テストパターンが対象とするテストメソッド</param>
+            <param name="useAlias">テストパターンの要素の後ろに、当該パターンの
+            エリアスを追加するか？</param>
+            <param name="argAddComment">テストパターンの最後尾要素を、当該パターンの
+            説明文を追加するか？</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestPattern.#ctor(System.String)">
+            <summary>
+            コンストラクタ。このコンストラクタを使用する場合、テストパターンの説明文は
+            個々のパターンに対して付与されない。
+            </summary>
+            <param name="argMethod">当該テストパターンが対象とするテストメソッド</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestClassInitialize">
+            <summary>
+            FreeTestにて、テストクラスの初期化時に実行されるコードで
+            ある事を宣言する。これにてテストクラス内のテストメソッドから
+            常にアクセス可能なオブジェクトを生成する。
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestClassCleanup">
+            <summary>
+            FreeTestにて、テストクラスの終了処理の際に実行されるコードで
+            ある事を宣言する。これにてテストクラス内のテストメソッドから
+            常にアクセス可能なオブジェクトが明示的に破棄される。
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestInitialize">
+            <summary>
+            FreeTestにて、テスト対象メソッドの実行直前に実行されるコード
+            である事を宣言する。FreeTestClassInitializeと同じ目的で宣言
+            されるが、各テストメソッドの実行の都度生成／破棄される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestInitialize.TargetMethod">
+            <summary>
+            事前処理の実行ターゲットとなるメソッド名
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestCleanup">
+            <summary>
+            FreeTestにて、テスト対象メソッドの実行直後に実行されるコード
+            である事を宣言する。FreeTestClassCleanupと同じ目的で宣言され
+            るが、各テストメソッドの実行の都度生成／破棄される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestCleanup.TargetMethod">
+            <summary>
+            事後処理の実行ターゲットとなるメソッド名
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder">
+            <summary>
+            FreeTest用のテストクラスを受けて、クラス構造を初期化してテストクラスコントローラを
+            返すメイン機能を提供する。
+            生成されたFreeTest用のインスタンスがUI側に引き渡され、テスト対象のUi上での選択や
+            引数値の設定／テスト実行などを行う下地を準備する。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.GetFreeTestClassController(System.Type,System.Web.UI.Page,System.Web.HttpContext)">
+            <summary>
+            テストクラスコントローラを初期化する処理。(当該クラスのメイン処理)
+            </summary>
+            <param name="argType">処理対象テストクラス</param>
+            <param name="argPage">実行するWeb画面UIのPageオブジェクト</param>
+            <param name="argContext">実行するWeb画面UIのHttpContextオブジェクト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.GetFreeTestClassController(System.Type)">
+            <summary>
+            テストクラスコントローラを初期化する処理。(当該クラスのメイン処理)
+            </summary>
+            <param name="argType">処理対象テストクラス</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestClassController(System.Type)">
+            <summary>
+            FreeTestClass属性を探索して内部メンバーを初期化する。
+            </summary>
+            <param name="argType">クラス情報</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestClassInitialize(EmotionSoft.ewd2.SimpleUT.FreeTestClassController,System.Reflection.MethodInfo,System.Boolean@)">
+            <summary>
+            FreeTestClassInitialize属性の検索
+            </summary>
+            <param name="argCtlr">処理対象のテストクラスコントローラ</param>
+            <param name="methInfo">検索対象のメソッド</param>
+            <param name="isInitialized">既に当該クラスにおいてFreeTestClassInitialize
+            が検索されたか？(複数回検索すると、例外をスローする。</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestClassCleanup(EmotionSoft.ewd2.SimpleUT.FreeTestClassController,System.Reflection.MethodInfo,System.Boolean@)">
+            <summary>
+            FreeTestClassCleanup属性の検索
+            </summary>
+            <param name="argCtlr">処理対象のテストクラスコントローラ</param>
+            <param name="methInfo">検索対象のメソッド</param>
+            <param name="isInitialized">既に当該クラスにおいてFreeTestClassCleanup
+            が検索されたか？(複数回検索すると、例外をスローする。
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestMethod(EmotionSoft.ewd2.SimpleUT.FreeTestClassController,System.Reflection.MethodInfo)">
+            <summary>
+            FreeTestMethod属性の検索
+            </summary>
+            <param name="argCtlr">処理対象のテストクラスコントローラ</param>
+            <param name="methInfo">検索対象のメソッド</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestInitialize(EmotionSoft.ewd2.SimpleUT.FreeTestClassController,System.Reflection.MethodInfo)">
+            <summary>
+            FreeTestInitialize属性の検索
+            </summary>
+            <param name="argCtlr">処理対象のテストクラスコントローラ</param>
+            <param name="methInfo">検索対象のメソッド</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestCleanup(EmotionSoft.ewd2.SimpleUT.FreeTestClassController,System.Reflection.MethodInfo)">
+            <summary>
+            FreeTestCleanup属性の検索
+            </summary>
+            <param name="argCtlr">処理対象のテストクラスコントローラ</param>
+            <param name="methInfo">検索対象のメソッド</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestPattern(EmotionSoft.ewd2.SimpleUT.FreeTestClassController,System.Reflection.PropertyInfo)">
+            <summary>
+            プロパティ内でのFreeTestPattern属性の検索。
+            見つかったテストパターンは対象となるテストメソッド制御クラスの
+            テストパターンリストに追加する。
+            </summary>
+            <param name="argCtlr">処理対象のテストクラスコントローラ</param>
+            <param name="propInfo">検索対象のプロパティ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestPattern(EmotionSoft.ewd2.SimpleUT.FreeTestClassController,System.Reflection.FieldInfo)">
+            <summary>
+            クラス項目内でのFreeTestPattern属性の検索。
+            見つかったテストパターンは対象となるテストメソッド制御クラスの
+            テストパターンリストに追加する。
+            </summary>
+            <param name="argCtlr">処理対象のテストクラスコントローラ</param>
+            <param name="fldInfo">検索対象のクラス項目</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassBuilder.getTestPatternExec(System.Object,EmotionSoft.ewd2.SimpleUT.FreeTestMethodController,System.Boolean,System.Boolean)">
+            <summary>
+            プロパティ内でのFreeTestPattern属性の検索。
+            見つかったテストパターンは対象となるテストメソッド制御クラスの
+            テストパターンリストに追加する。
+            </summary>
+            <param name="argTestPattern">検索対象のテストパターン</param>
+            <param name="methCtlr">
+            検索対象のテストパターンが適用されるテスト対象メソッド制御クラス</param>
+            <param name="argAddComment">テストパターンにコメントを適用するか？</param>
+            <param name="argUseAlias">テストパターンにエリアスを適用するか？</param>
+            
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestClassController">
+            <summary>
+            FreeTest用のテストクラス。テストプログラムをこのクラスのコンストラクタに
+            引き渡すことにより、FreeTestのメンバーを初期化する。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.#ctor(System.Type,System.String,System.String)">
+            <summary>
+            テスト対象クラスの型情報を受けて、テストクラスを生成する。
+            </summary>
+            <param name="argType">テスト対象クラスの型情報</param>
+            <param name="argAlias">テスト対象クラスのエリアス</param>
+            <param name="argComment">テスト対象クラスに関する解説・説明などのコメント</param>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.MethodControllerList">
+            <summary>
+            当該テスト対象制御クラスが保持するテストメソッド制御クラスのリスト
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.Alias">
+            <summary>
+            このテストメソッドのエリアス。
+            設定されない場合もある。(その場合は空白)
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.Comment">
+            <summary>
+            このテストメソッドに関する説明その他のコメント。
+            設定されない場合もある。(その場合は空白)
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.TestClassInitialize">
+            <summary>
+            テストクラス用初期化処理のリフレクション情報
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.Initialize">
+            <summary>
+            テストクラス用初期化を実行する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.TestClassCleanup">
+            <summary>
+            テストクラス用クリーンアップ処理のリフレクション情報
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.Cleanup">
+            <summary>
+            テストクラス用クリーンアップを実行する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.MethInitialzerList">
+            <summary>
+            当該クラスが管理するテスト対象メソッド別のInitialize(初期化)処理を
+            管理する制御クラスのリスト
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestClassController.MethCleanUpperList">
+            <summary>
+            当該クラスが管理するテスト対象メソッド別のCleanup(終了)処理を
+            管理する制御クラスのリスト
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestClassControllerList">
+            <summary>
+            非シリアル化FreeTestFixture(WebFreeTestFixture)を含めて、全てのFreeTestFixtureを
+            名前(FullName)と実物(Type)双方を保持するリスト。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassControllerList.AddClassController(System.Type,System.Web.UI.Page,System.Web.HttpContext)">
+            <summary>
+            テスト対象クラスの制御クラスを生成してリストに追加する。
+            </summary>
+            <param name="argType">テスト対象クラスの型情報</param>
+            <param name="argPage">実行するWeb画面UIのPageオブジェクト</param>
+            <param name="argContext">実行するWeb画面UIのHttpContextオブジェクト</param>
+            <returns>リストに追加されたテスト対象クラスの制御クラス</returns>
+            <remarks>このオーバーロードは主としてWebTestFixture用に使用される。</remarks>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestClassControllerList.AddClassController(System.Type)">
+            <summary>
+            テスト対象クラスの制御クラスを生成してリストに追加する。
+            </summary>
+            <param name="argType">テスト対象クラスの型情報</param>
+            <returns>リストに追加されたテスト対象クラスの制御クラス</returns>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestException">
+            <summary>
+            FreeTest系処理における例外を一律引き受ける。
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestFixture">
+            <summary>
+            FreeTestにてAdHocな単体テストを実行するテストシナリオの基底クラス。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.TestReporter">
+            <summary>
+            テストの自由出力ノート。UI側で実装する。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ClearNote">
+            <summary>
+            テストの自由出力ノートをクリアする。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.WriteReturnValue(System.String)">
+            <summary>
+            テストプログラムの戻り値を専用エリアに出力する。 
+            </summary>
+            <param name="strValue">文字列に変換された戻り値</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.WriteToNote(System.String)">
+            <summary>
+            テストの経過ノートにメッセージを追加する。 
+            </summary>
+            <param name="argMessage">出力メッセージ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.WriteLineToNote(System.String)">
+            <summary>
+            テストの経過ノートにメッセージを改行付きで追加する。 
+            </summary>
+            <param name="argMessage">出力メッセージ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.WriteLineToNote">
+            <summary>
+            テストの経過ノートにメッセージに空白の1行を挿入する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.NoteMessage">
+            <summary>
+            テストの経過ノートメッセージを取得／設定する。 
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.DataViewer">
+            <summary>
+            テスト用UIにデータ(DataSet/DataTable)の内容を出力するための
+            インター江ふぃ巣
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UIのテスト事前表示域のGridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">データ出力エリアの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UIのテスト事前表示域のGridViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト事前設定表示域のGridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト事前設定表示域のGridViewに出力する。
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UI上のテスト実行後のデータ状態表示域の
+            GridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">データ出力エリアの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UI上のテスト実行後のデータ状態表示域の
+            GridViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト実行後データ状態表示域の
+            GridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト実行後データ状態表示域の
+            GridViewに出力する。
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.DetailsViewer">
+            <summary>
+            テスト用UIにデータ(DataSet/DataTable)の内容を出力するための
+            インター江ふぃ巣
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetDetailsData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UI上のテスト実行前のデータ状態表示域の
+            DetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetDetailsData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UI上のテスト実行前のデータ状態表示域の
+            DetailsViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetDetailsData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト事前設定表示域のDetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowPresetDetailsData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト事前設定表示域のDetailsViewに出力する。
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultDetailsData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UI上のテスト実行後のデータ状態表示域の
+            DetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultDetailsData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UI上のテスト実行後のデータ状態表示域の
+            DetailsViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultDetailsData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQL文の実行結果ををテスト用UIのテスト結果表示域のDetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.ShowResultDetailsData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String)">
+            <summary>
+            データテーブルをテスト用UIのテスト結果表示域のDetailsViewに出力する。
+            Web上で実行する場合にはページングが可能になる。
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.OnParamValueConverting(System.Object,EmotionSoft.ewd2.SimpleUT.ParamTypeConvertingEventArgs)">
+            <summary>
+            文字列で渡される任意のテスト対象メソッドのパラメータ値を、実際の
+            型にコンバートする際に特別な処理を必要とする場合にオーバーライド
+            する。
+            </summary>
+            <param name="sender">テストアプリケーション</param>
+            <param name="e">
+            テストメソッドのパラメータを指定して、独自の変換を施す。
+            StringValueプロパティを受けて、ObjectValueを設定する。
+            ParamTypeの他、ParamName, MethodName等での条件分岐が可能。
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.OnParamReturnValueConverting(System.Object,EmotionSoft.ewd2.SimpleUT.ParamTypeConvertingEventArgs)">
+            <summary>
+            オブジェクト型で返されるテスト対象メソッドの引数戻り値を、文字列に
+            コンバートする際に特別な処理を必要とする場合にオーバーライドする。
+            </summary>
+            <param name="sender">テストアプリケーション</param>
+            <param name="e">
+            テストメソッドの戻り値を受けて、テスト結果の評価が可能な文字列表現に
+            変換する。
+            ObjectValueプロパティを受けて、StringValueを設定する。
+            ParamTypeの他、MethodName等での条件分岐が可能。
+            (ParamNameは一律『ReturnValue』が返される。)
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixture.OnReturnValueConverting(System.Object,EmotionSoft.ewd2.SimpleUT.TypeConvertingEventArgs)">
+            <summary>
+            オブジェクト型で返されるテスト対象メソッド戻り値を、文字列にコンバート
+            する際に特別な処理を必要とする場合にオーバーライドする。
+            </summary>
+            <param name="sender">テストアプリケーション</param>
+            <param name="e">
+            テストメソッドの戻り値を受けて、テスト結果の評価が可能な文字列表現に
+            変換する。
+            ObjectValueプロパティを受けて、StringValueを設定する。
+            ValueTypeの他、MethodName等での条件分岐が可能。
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestFixtureExecutor.Invoke(EmotionSoft.ewd2.SimpleUT.AutoMethodInfo)">
+            <summary>
+            FreeTestFixtureインスタンス内のテスト対象メソッドを実行する。
+            </summary>
+            <param name="argMethodInfo"></param>
+            <remarks>
+            この静的メソッドを使用することにより、FreeTestFixtureクラス内でオーバーライド
+            されたOnParamValueConverting/やOnParamReturnValueConvertingを使用することが
+            可能になる。
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupper">
+            <summary>
+            テスト対象メソッドのクリーンアップ処理制御クラス
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupper.TargetMethodNameList">
+            <summary>
+            当該Cleanupメソッドが引き受けるテスト対象メソッド名のリスト
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupper.TestClassCleanup">
+            <summary>
+            テストクラス用クリーンアップ処理のリフレクション情報
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupper.Cleanup">
+            <summary>
+            テストクラス用クリーンアップを実行する。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupper.#ctor(System.Object,System.String,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argInstance">
+            当該Cleanupメソッドが引き受けるテスト対象メソッド名のリスト
+            </param>
+            <param name="argMethodname">
+            Cleanup処理として指定されているメソッド名
+            </param>
+            <param name="argTargetNames">
+            当該クリーンアップ処理が受け持つテスト対象メソッド名。
+            複数存在する場合には『;』でつなげて定義する。
+            </param>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupperList.ClassName">
+            <summary>
+            テストパターンの対象となるメソッドを含むクラス名(FullName)
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupperList.#ctor(System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argClassName">
+            クリーンアップ対象となるメソッドを含むクラス名(FullName)
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupperList.AddMethodCleanUpper(System.Object,System.String,System.String)">
+            <summary>
+            新規テスト対象メソッド別Cleanup制御クラスを生成してリストに
+            追加する。
+            </summary>
+            <param name="argInstance">
+            当該Cleanupメソッドが引き受けるテスト対象メソッド名のリスト
+            </param>
+            <param name="argMethodname">
+            Cleanup処理として指定されているメソッド名
+            </param>
+            <param name="argTargetNames">
+            当該クリーンアップ処理が受け持つテスト対象メソッド名。
+            複数存在する場合には『;』でつなげて定義する。
+            </param>
+            <returns>
+            新規に追加されたテスト対象メソッド別Cleanup制御クラス
+            </returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodCleanupperList.CleanupByMethodName(System.String)">
+            <summary>
+            リスト内に含まれる終了処理のうち、実行されるテストメソッド
+            に対応するものを実行する。
+            </summary>
+            <param name="argTestMethodName"></param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController">
+            <summary>
+            FreeTest用のテスト対象メソッドを制御する。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.OnParamValueConverting">
+            <summary>
+            データテーブル上の文字列で与えられたパラメータ値を実際の型にコンバートする際の
+            カスタム処理。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.OnParamReturnValueConverting">
+            <summary>
+            戻り値引数の値を文字列表現に変換する際のカスタム処理。
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController._instance">
+            <summary>
+            メソッドを保持するクラスのインスタンス本体
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.Instance">
+            <summary>
+            メソッドを格納する親クラスのインスタンス。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.Alias">
+            <summary>
+            このテストメソッドのエリアス。
+            設定されない場合もある。(その場合は空白)
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.Comment">
+            <summary>
+            このテストメソッドに関する説明その他のコメント。
+            設定されない場合もある。(その場合は空白)
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.ClassName">
+            <summary>
+            インスタンスのクラス名(=FullName)
+            </summary>
+        </member>
+        <member name="F:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController._autoMethodInfo">
+            <summary>
+            AutoTest内のメソッド情報管理クラス
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.autoMethodInfo">
+            <summary>
+            パラメータや戻り値の制御用ユーティリティを揃えたAutoTest内の
+            メソッド情報管理クラス。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.MethodName">
+            <summary>
+            メソッド名
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.ParameterInfoTable">
+            <summary>
+            メソッドが有するパラメータ情報を保持するデータテーブル
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.GetParameterValue">
+            <summary>
+            パラメータ情報を保持するデータテーブルで管理された入力値をパラメータの
+            型にキャストして、オブジェクト配列化して返す。
+            </summary>
+            <returns>入力されたパラメータ値のオブジェクト配列</returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.SetOutpuParameterValue(System.Object[])">
+            <summary>
+            戻り値引数を元のパラメータ情報保持用データテーブルに同期化する。
+            </summary>
+            <param name="argParams">戻り値引数を含むオブジェクト配列</param>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.ReturnValueType">
+            <summary>
+            メソッドの戻り値型情報
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.TestPatternControllerList">
+            <summary>
+            当該テストメソッドクラスに割り当てられたテストパターンを管理する
+            引数の組み合わせパターンリスト
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodController.#ctor(System.Object,System.String,EmotionSoft.ewd2.SimpleUT.ParamValueCoverting,EmotionSoft.ewd2.SimpleUT.ParamValueCoverting,System.String,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argInstance">処理対象メソッドを格納するクラスインスタンス</param>
+            <param name="argMethodName">メソッド名</param>
+            <param name="argPRVConverging">
+            文字列パラメータ値を実際の値にコンバートする際のカスタム処理。
+            (不要の場合はnullを指定する)
+            </param>
+            <param name="argPVConverting">
+            パラメータの戻り値を文字列表現にコンバートする際のカスタム処理
+            (不要の場合はnullを指定する)
+            </param>
+            <param name="argAlias">処理対象メソッドのエリアス</param>
+            <param name="argComment">処理対象メソッドに関する解説・説明などのコメント</param>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodControllerList.ClassName">
+            <summary>
+            メソッドを保持する親クラス名
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodControllerList.#ctor(System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argClassName">メソッドを保持する親クラス名</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodControllerList.AddMethodController(System.Object,System.String,EmotionSoft.ewd2.SimpleUT.ParamValueCoverting,EmotionSoft.ewd2.SimpleUT.ParamValueCoverting,System.String,System.String)">
+            <summary>
+            テスト対象メソッド制御クラスを生成してリストに追加する。
+            </summary>
+            <param name="argInstance">処理対象メソッドを格納するクラスインスタンス</param>
+            <param name="argMethodName">メソッド名</param>
+            <param name="argPRVConverging">
+            文字列パラメータ値を実際の値にコンバートする際のカスタム処理。
+            (不要の場合はnullを指定する)
+            </param>
+            <param name="argPVConverting">
+            パラメータの戻り値を文字列表現にコンバートする際のカスタム処理
+            (不要の場合はnullを指定する)
+            </param>
+            <param name="argAlias">処理対象メソッドの別名</param>
+            <param name="argComment">処理対象メソッドに関する解説・説明などのコメント</param>
+            <returns>
+            リストに追加されたテスト対象メソッド制御クラス
+            </returns>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodInitializer.TargetMethodNameList">
+            <summary>
+            当該Initializeメソッドが引き受けるテスト対象メソッド名のリスト
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodInitializer.TestClassInitialize">
+            <summary>
+            テストクラス用初期化処理のリフレクション情報
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodInitializer.Initialize">
+            <summary>
+            テストクラス用初期化を実行する。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestMethodInitializerList.ClassName">
+            <summary>
+            テストパターンの対象となるメソッドを含むクラス名(FullName)
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodInitializerList.#ctor(System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argClassName">
+            クリーンアップ対象となるメソッドを含むクラス名(FullName)
+            </param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodInitializerList.AddMethodIninializer(System.Object,System.String,System.String)">
+            <summary>
+            新規テスト対象メソッド別Initialze制御クラスを生成してリストに
+            追加する。
+            </summary>
+            <param name="argInstance">
+            当該Initialzeメソッドが引き受けるテスト対象メソッド名のリスト
+            </param>
+            <param name="argMethodname">
+            Initialze処理として指定されているメソッド名
+            </param>
+            <param name="argTargetNames">
+            当該Initialze処理が受け持つテスト対象メソッド名。
+            複数存在する場合には『;』でつなげて定義する。
+            </param>
+            <returns>
+            新規に追加されたテスト対象メソッド別Initialze制御クラス
+            </returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestMethodInitializerList.InitializeByMethodName(System.String)">
+            <summary>
+            リスト内に含まれる初期化処理のうち、実行されるテストメソッド
+            に対応するものを実行する。
+            </summary>
+            <param name="argMethodName"></param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestPatternController">
+            <summary>
+            FreeTestで使用するテストパターン(FreeTestPattern)の制御クラス
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPatternController.InputValue">
+            <summary>
+            このテストパターンで使用するテストメソッドへのパラメータ入力値の
+            組み合わせ。ただしパラメータは全て文字列で渡される。
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPatternController.Alias">
+            <summary>
+            このテストパターンのエリアス。
+            設定されない場合もある。(その場合は空白)
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPatternController.Comment">
+            <summary>
+            このテストパターンに関する説明その他のコメント。
+            設定されない場合もある。(その場合は空白)
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestPatternController.Apply(EmotionSoft.ewd2.SimpleUT.DstParameterInfo.TblParameterInfoDataTable)">
+            <summary>
+            パラメータ情報格納テーブルの入力値項目を、当該テストパターンの
+            入力値配列で置き換える。
+            </summary>
+            <param name="argInfoTable">処理対象メソッドのパラメータ情報管理テーブル</param>
+            <remarks>
+            このメソッドのために、当該クラスが存在するようなもの。
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EmotionSoft.ewd2.SimpleUT.FreeTestPatternController.#ctor(System.String,System.String[],System.String,System.String)" -->
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestPatternController.#ctor(System.String,System.String[])">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argMethodName">テストパターンの処理対象メソッド名</param>
+            <param name="argInputValue">テストパターンの入力値を文字列化した配列
+            テストパターンで使用するパラメータ入力値の文字列表現の配列
+            </param>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPatternControllerList.ClassName">
+            <summary>
+            テストパターンの対象となるメソッドを含むクラス名(FullName)
+            </summary>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.FreeTestPatternControllerList.MethodName">
+            <summary>
+            テストパターンの対象となるメソッド名
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestPatternControllerList.#ctor(System.String,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="argClassName">
+            テストパターンの対象となるメソッドを含むクラス名(FullName)
+            </param>
+            <param name="argMethodName">テストパターンの対象となるメソッド名</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestPatternControllerList.AddPatternController(System.String,System.String[],System.String,System.String)">
+            <summary>
+            テストパターンを生成してリストメンバーに追加する。
+            </summary>
+            <param name="argMethodName">テストパターンの処理対象メソッド名</param>
+            <param name="argInputValue">
+            テストパターンで使用するパラメータ入力値の文字列表現の配列
+            </param>
+            <param name="argAlias">テストパターンの別名</param>
+            <param name="argComment">argInputValue配列の最後の要素をテストパターンの説明用
+            コメントとするか？</param>
+            <returns>リストに追加されたテストパターン</returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestPatternControllerList.AddPatternController(System.String,System.String[])">
+            <summary>
+            テストパターンを生成してリストメンバーに追加する。
+            </summary>
+            <param name="argMethodName">テストパターンの処理対象メソッド名</param>
+            <param name="argInputValue">
+            テストパターンで使用するパラメータ入力値の文字列表現の配列
+            </param>
+            <returns>リストに追加されたテストパターン</returns>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestTypeChecker.checkMethodParameterType(System.Reflection.MethodInfo,System.String@)">
+            <summary>
+            任意のメソッドの引数が全てFreeTestが認定する型であるかチェックする。
+            </summary>
+            <param name="argInfo">チェック対象となるメソッド情報</param>
+            <param name="errorMessage">エラー値を返した場合に、必要なエラー情報をセットする。</param>
+            <returns>
+            True: 引数は全てFreeTestが認定する型である。
+            False: 引数にFreeTestが認定されていない型が含まれている。</returns>
+            <remarks>
+            FreeTestのテストメソッド戻り値は、原則としてどのような型を指定してもよいものとする。
+            これは如何なる型であってもToString()メソッドを実装しているため、テスト結果の出力に
+            おいて例外が発生する可能性が少ないためである。
+            ただし、FreeTestからNUnitや.NetFramework3.5以降のテスティングフレームワーク用のメソッドを
+            自動生成する場合を考慮して、極力テストメソッドの戻り値も基本形を使用することを推奨する。
+            </remarks>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.FreeTestTypeChecker.isValidType(System.Type,System.Boolean)">
+            <summary>
+            引数として与えられた型がFreeTestの引数として認定された型であるかチェックする。
+            </summary>
+            <param name="argType">処理対象型</param>
+            <param name="isRetType">戻り値の型判定であるか？</param>
+            <returns>True: 
+            認定された型である。
+            False: 認定されたではない。
+            </returns>
+            <remarks>列挙型以外で基本となる値型を拡張(継承)したものは
+            当該メソッド内では値型とは認めない。</remarks>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.FreeTestTypeConvertUtil">
+            <summary>
+            主としてFreeTestFixtureのテストメソッドの戻り値を評価可能な
+            文字列に変換するためのユーティリティ集。
+            テストメソッド内から戻り値変換用のメソッドをコールするために
+            用意する。
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.IDataViewer">
+            <summary>
+            FreeTestFixture内からテスト用UIに対してテストで使用するデータ出力
+            するためのインターフェイス
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDataViewer.ShowPresetData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UIのテスト事前表示域のGridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">データ出力エリアの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDataViewer.ShowPresetData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UIのテスト事前表示域のGridViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDataViewer.ShowPresetData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト事前表示域のGridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">データ出力エリアの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDataViewer.ShowResultData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UIのテスト結果表示域のGridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">データ出力エリアの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDataViewer.ShowResultData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UIのテスト結果表示域のGridViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDataViewer.ShowResultData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト結果表示域のGridViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">データ出力エリアの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.IFreeTestReporter">
+            <summary>
+            FreeTestFixture内からテスト用UIに対して出力する結果出力エリア
+            および自由出力ノートエリアへの制御
+            </summary>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.IWebController">
+            <summary>
+            WebFreeTestFixture専用に設けたWebアプリケーション
+            特有のユーティリティーメソッド用のインターフェイス
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IWebController.RedirectOnNewWindow(System.String)">
+            <summary>
+            新しいブラウザウィンドウを開いて指定されたURLに遷移する。
+            </summary>
+            <param name="redirectUrl">遷移先のURL</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EmotionSoft.ewd2.SimpleUT.IWebController.RedirectOnNewWindow(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" -->
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IWebController.RedirectOnNewWindow(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            新しいブラウザウィンドウを開いて指定されたURLに遷移する。
+            </summary>
+            <param name="redirectUrl">遷移先のURL</param>
+            <param name="argWidth">ウィンドウ幅</param>
+            <param name="argHeight">ウィンドウ高さ</param>
+            <param name="argLeft">ウィンドウ位置左</param>
+            <param name="argTop">ウィンドウ位置上</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IWebController.RedirectOnNewWindow(System.String,System.Int32,System.Int32)">
+            <summary>
+            新しいブラウザウィンドウを開いて指定されたURLに遷移する。
+            </summary>
+            <param name="redirectUrl">遷移先のURL</param>
+            <param name="argWidth">ウィンドウ幅</param>
+            <param name="argHeight">ウィンドウ高さ</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.WebFreeTestFixture">
+            <summary>
+            FreeTestにてAdHocなWebアプリケーション用の単体テストを実行するテストシナリオの基底クラス。
+            FreeTestFixtureにWeb制御用のPageをメンバーとして実装し、通常のWebPageが提供する一般的な
+            プロパティを公開する。
+            </summary>
+            <remarks>
+            WebFreeTestFixtureを継承するクラス側は、アプリケーションとしてSystem.Webを参照設定した
+            上で、System.Webをusing宣言する必要がある。これを行わないと、Request、Response、Session･･･
+            といったWeb.Pageに依存するオブジェクトが利用できない。
+            </remarks>
+        </member>
+        <member name="P:EmotionSoft.ewd2.SimpleUT.WebFreeTestFixture.WebController">
+            <summary>
+            Webテスト専用ユーティリティー。UI側で実装する。
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.WebFreeTestFixture.RedirectOnNewWindow(System.String)">
+            <summary>
+            ブラウザの別ウィンドをオープンして、指定したURLに遷移する。
+            </summary>
+            <param name="redirectUrl">別のウィンドウにおける遷移先</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.WebFreeTestFixture.RedirectOnNewWindow(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            ブラウザの別ウィンドをオープンして、指定したURLに遷移する。
+            </summary>
+            <param name="redirectUrl">別のウィンドウにおける遷移先</param>
+            <param name="argWidth">ウィンドウ幅</param>
+            <param name="argHeight">ウィンドウ高さ</param>
+            <param name="argLeft">ウィンドウ位置左</param>
+            <param name="argTop">ウィンドウ位置上</param>
+            <paraparam name="showMenuBar">メニューバー有無</paraparam>
+            <param name="showToolBar">ツールバー有無</param>
+            <param name="showAddressBar">アドレスバー有無</param>
+            <param name="showStatus">ステータスバー有無</param>
+            <param name="ShowResizable">リサイズ可否</param>
+            <param name="showScrollBars">スクロールバー有無</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.WebFreeTestFixture.RedirectOnNewWindow(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            ブラウザの別ウィンドをオープンして、指定したURLに遷移する。
+            </summary>
+            <param name="redirectUrl">別のウィンドウにおける遷移先</param>
+            <param name="argWidth">ウィンドウ幅</param>
+            <param name="argHeight">ウィンドウ高さ</param>
+            <param name="argLeft">ウィンドウ位置左</param>
+            <param name="argTop">ウィンドウ位置上</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.WebFreeTestFixture.RedirectOnNewWindow(System.String,System.Int32,System.Int32)">
+            <summary>
+            ブラウザの別ウィンドをオープンして、指定したURLに遷移する。
+            </summary>
+            <param name="redirectUrl">別のウィンドウにおける遷移先</param>
+            <param name="argWidth">ウィンドウ幅</param>
+            <param name="argHeight">ウィンドウ高さ</param>
+        </member>
+        <member name="T:EmotionSoft.ewd2.SimpleUT.IDetailsViewer">
+            <summary>
+            FreeTestFixture内からテスト用UIに対してテストで使用するデータ出力
+            するためのインターフェイス
+            </summary>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDetailsViewer.ShowPresetDetailsData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UIのテスト事前表示域のDetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDetailsViewer.ShowPresetDetailsData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UIのテスト事前表示域のDetailsViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDetailsViewer.ShowPresetDetailsData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト事前表示域のDetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDetailsViewer.ShowResultDetailsData(System.Data.DataTable,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            データテーブルをテスト用UIのテスト結果表示域のDetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="argTable">出力対象データ</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDetailsViewer.ShowResultDetailsData(System.Data.DataTable)">
+            <summary>
+            データテーブルをテスト用UIのテスト結果表示域のDetailsViewに出力する。
+            </summary>
+            <param name="argTable">出力対象データ</param>
+        </member>
+        <member name="M:EmotionSoft.ewd2.SimpleUT.IDetailsViewer.ShowResultDetailsData(System.String,System.String,EmotionSoft.ewd2.SimpleUT.SqlDataSourceParameterList,System.String,EmotionSoft.ewd2.SimpleUT.DataColumnAttributesList)">
+            <summary>
+            SELECT用SQLを実行して結果をテスト用UIのテスト結果表示域のDetailsViewに出力する。
+            GridView上の列出力形式は、引数colAttrsの指定に従う。(colAttrsの指定に存在しない
+            列は表示されない。)
+            </summary>
+            <param name="connectString">接続文字列</param>
+            <param name="selectCommand">データ検索用SQL文</param>
+            <param name="paramList">検索用SQL文のSqlパラメータ指定のリスト</param>
+            <param name="captionText">DetailsViweの標題欄に表示する文字列</param>
+            <param name="colAttrsList">出力対象となるデータ項目の属性指定のリスト</param>
+        </member>
+    </members>
+</doc>

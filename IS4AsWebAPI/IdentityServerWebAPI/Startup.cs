@@ -32,13 +32,12 @@ namespace IdentityServerWebAPI
 
         }
 
-        // ÉçÉOÉCÉìâÊñ ÇGOOGLEÇ…îÚÇŒÇ∑ÅI
         private static void SetupIdentityServer(IdentityServerOptions identityServerOptions)
         {
             // identityServerOptions.UserInteraction.LoginUrl = "https://www.google.co.jp";
 
-            // identityServerOptions.UserInteraction.LoginUrl = "https://localhost:44315/LoginUIRedirector.ashx";
-            identityServerOptions.UserInteraction.LoginUrl = "https://localhost:44315/Login.aspx";
+            identityServerOptions.UserInteraction.LoginUrl = "https://localhost:44316/LoginUIRedirector.ashx";
+            // identityServerOptions.UserInteraction.LoginUrl = "https://localhost:44316/Login.aspx";
             // identityServerOptions.UserInteraction.LoginUrl = "http://localhost/membership/LoginUIRedirector.ashx";
         }
 

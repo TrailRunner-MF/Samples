@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySocialLoginService", "MySocialLoginService\MySocialLoginService.csproj", "{346DE194-D5DD-4DF4-80F3-2EBB81D1FAB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialLoginWebAPITest", "SocialLoginWebAPITest\SocialLoginWebAPITest.csproj", "{5716B4BC-7FFE-4480-9FAF-C965EAFDF5A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{346DE194-D5DD-4DF4-80F3-2EBB81D1FAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346DE194-D5DD-4DF4-80F3-2EBB81D1FAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346DE194-D5DD-4DF4-80F3-2EBB81D1FAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346DE194-D5DD-4DF4-80F3-2EBB81D1FAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5716B4BC-7FFE-4480-9FAF-C965EAFDF5A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5716B4BC-7FFE-4480-9FAF-C965EAFDF5A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5716B4BC-7FFE-4480-9FAF-C965EAFDF5A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5716B4BC-7FFE-4480-9FAF-C965EAFDF5A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {316358F4-7968-4F52-BCA4-068ECFEB8081}
+	EndGlobalSection
+EndGlobal

@@ -16,10 +16,11 @@ namespace membership
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            string reutnrUrl = "https://localhost:44318/home/";
-            string target = "https://localhost:5001/Account/Login2?un={0}&pw={1}&rl={2}&ru={3}";
-            target = string.Format(target, this.txtLoginID.Text, this.txtPassword.Text,
-                this.chkRememberme.Checked.ToString(), reutnrUrl);
+            string reutnrUrl = "https://localhost:44390/";
+            string target = "https://localhost:5001/identity/login?un={0}&ru={1}&rm={2}";
+            target = string.Format(target, this.txtLoginID.Text,
+                Server.UrlEncode(reutnrUrl),
+                this.chkRememberme.Checked.ToString());
 
             Response.Redirect(target);
         }

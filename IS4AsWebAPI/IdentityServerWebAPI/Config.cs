@@ -38,10 +38,10 @@ namespace IdentityServerWebAPI
                     AllowedGrantTypes = GrantTypes.Code,
                     
                     // where to redirect to after login
-                    RedirectUris = { "https://localhost:44396/signin-oidc" },
+                    RedirectUris = { "https://localhost:44390/signin-oidc" },
 
                     // where to redirect to after logout
-                    PostLogoutRedirectUris = { "https://localhost44396/signout-callback-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:44390/signout-callback-oidc" },
 
                     AllowedScopes = new List<string>
                     {
