@@ -55,7 +55,6 @@ namespace SocialLoginWebAPITest.App_Code
         }
         #endregion
 
-
         #region GetResponseAsync (private)
         /// <summary>
         /// 引数のアドレスに指定されたWebAPIをコールする。
