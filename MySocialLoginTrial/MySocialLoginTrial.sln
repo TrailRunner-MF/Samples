@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySocialLoginService", "MyS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialLoginWebAPITest", "SocialLoginWebAPITest\SocialLoginWebAPITest.csproj", "{5716B4BC-7FFE-4480-9FAF-C965EAFDF5A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtherSocialLoginService", "OtherSocialLoginService\OtherSocialLoginService.csproj", "{775D697B-E198-4C36-B282-8560407DE7D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtherSocialLoginService", "OtherSocialLoginService\OtherSocialLoginService.csproj", "{775D697B-E198-4C36-B282-8560407DE7D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

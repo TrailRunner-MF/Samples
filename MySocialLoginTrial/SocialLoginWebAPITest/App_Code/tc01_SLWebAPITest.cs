@@ -17,15 +17,15 @@ namespace SocialLoginWebAPITest.App_Code
         #region client
         // HttpClientの特性により静的メンバーにすること。
         // ※）そうしないとシステムリソースを食い尽くす可能性のあるトンデモプログラムらしい！！
-        static HttpClient client; 
+        static HttpClient client;
         #endregion
 
-        #region tm11_CallExternalLoginBinderByPostOrder
+        #region tm11_CallExternalLogins
         /// <summary>
         /// .外部ログインキーとユーザーIDのバインド実行用ページへのPostを実行する
         /// </summary>
-        [FreeTestMethod("tm12.Execute MyExternalLogin-Order")]
-        public void tm11_CallExternalLoginBinderByPostOrder(string provider, string userID, string returnUrl)
+        [FreeTestMethod("test01.Execute ExternalLogins-Order")]
+        public void tm11_CallExternalLogins(string provider, string userID, string returnUrl)
         {
             string actionUrll = "https://localhost:44321/SocialLogin/MyExternalLogins?handler=LinkLogin";
 
@@ -38,8 +38,26 @@ namespace SocialLoginWebAPITest.App_Code
         }
         #endregion
 
+        #region tm12_CallOtherExternalLogins
+        /// <summary>
+        /// .外部ログインキーとユーザーIDのバインド実行用ページへのPostを実行する
+        /// </summary>
+        [FreeTestMethod("test02.Execute Other ExternalLogins-Order")]
+        public void tm12_CallOtherExternalLogins (string provider, string userID, string returnUrl)
+        {
+            string actionUrll = "https://localhost:44382/SocialLogin/MyExternalLogins?handler=LinkLogin";
+
+            var dic = new Dictionary<string, string>();
+            dic.Add("provider", provider);
+            dic.Add("userID", userID);
+            dic.Add("returnUrl", Server.UrlEncode(returnUrl));
+            dic.Add("__RequestVerificationToke", new Random().NextDouble().ToString());     // This must create correctly!!
+            ExecPost(actionUrll, dic);
+        }
+        #endregion
+
         #region ExternalLoginBinderPattern
-        [FreeTestPattern("tm11_CallExternalLoginBinderByPostOrder", true, false)]
+        [FreeTestPattern("tm11_CallExternalLogins;tm12_CallOtherExternalLogins", true, false)]
         public List<string[]> ExternalLoginBinderPattern
         {
             get
@@ -91,7 +109,7 @@ namespace SocialLoginWebAPITest.App_Code
                     item.Key, item.Value) + Environment.NewLine;
             }
             this.Session["PostRedirecParameters"] = parameters;
-            this.Response.Redirect("PostRedirector.aspx");
+            this.RedirectOnNewWindow("PostRedirector.aspx");
         } 
         #endregion
 
