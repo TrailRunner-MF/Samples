@@ -1,0 +1,406 @@
+/* --------------------------------
+  全体
+-------------------------------- */
+body
+{
+	width: 980px;
+}
+
+.FreeTestPanel
+{
+	width: 980px;
+	font-family:Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','MS UI Gothic','ＭＳ Ｐゴシック',Osaka,sans-serif;
+	font-size: 10pt;
+}
+
+.WarningMild
+{
+	color: Gray;
+}
+
+.WarningPlain
+{
+	color: Red;
+}
+
+.WarningEmphasis
+{
+	color: Red;
+	font-weight: bold;
+}
+
+
+/* --------------------------------
+  タイトルエリア
+-------------------------------- */
+
+.FormTitle
+{
+	width: 880px;
+	_width: 980px;
+	height: 30px;
+	_height: 38px;
+	padding: 4px 10px 0px 10px;
+	_padding: 4px 10px 0px 20px;
+	margin: 12px 10px 20px 0px;
+	_margin: 12px 0px 20px 0px;
+	
+	/* 以下CSSハック不要 */
+	background-color: #003399;
+	color: #FFFFFF;
+	font-size: 18pt;
+}
+
+
+/* --------------------------------
+  各エリアタイトル(＝小見出し)
+-------------------------------- */
+
+.BaseAreaTitle
+{
+	width: 150px;
+	height: 18px;
+	float: left;
+	background-color: #3366FF;
+	color: #FFFF99;
+	padding: 4px 0px 0px 8px;
+}
+
+.ResultAreaTitle
+{
+	width: 150px;
+	height: 18px;
+	float: left;
+	background-color: #3366FF;
+	color: #FFFF99;
+	padding: 4px 0px 0px 8px;
+}
+
+.DataOutputAreaTitleBefore
+{
+	width: 300px;
+	height: 18px;
+	float: left;
+	background-color: #3366FF;
+	color: #FFFF99;
+	padding: 4px 0px 0px 8px;
+}
+.DataOutputAreaTitleAfter
+{
+	width: 300px;
+	height: 18px;
+	float: left;
+	background-color: #3366FF;
+	color: #FFFF99;
+	padding: 4px 0px 0px 8px;
+}
+.BaseAreaCommentShort
+{
+	width: 570px;
+	float: left;
+	margin: 4px 0px 4px 168px;
+	padding: 2px 4px 4px 4px;
+	border: 0px solid #ffffff;
+	color: #666666;
+}
+.BaseAreaCommentLong
+{
+	width: 730px;
+	float: left;
+	margin: 0px 0px 0px 168px;
+	padding: 2px 4px 4px 4px;
+	border: 0px solid #ffffff;
+	color: #666666;
+}
+.BaseAreaNotReady
+{
+	width: 740px;
+	margin: 0px 0px 0px 10px;
+	padding: 2px 0px 2px 0px;
+	float: left;
+}
+
+/* --------------------------------
+  テスト対象クラス選択エリア
+-------------------------------- */
+
+.TargetClass
+{
+	width: 920px;
+	float: left;
+	margin: 6px 0px 10px 10px;
+}
+
+.TargetClass Select
+{
+	width: 580px;
+	margin: 0px 0px 0px 10px;
+	padding: 2px 0px 2px 0px;
+	float: left;
+}
+
+/* --------------------------------
+  テスト対象メソッド選択エリア
+-------------------------------- */
+
+.TargetMethod
+{
+	width: 920px;
+	float: left;
+	margin: 6px 0px 10px 10px;
+}
+
+.TargetMethod Table
+{
+	width: 740px;
+	float: left;
+	margin: 0px 0px 4px 10px;
+	border: 1px solid gray
+}
+.TargetMethod td
+{
+	padding: 2px 0px 2px 0px;
+}
+
+.TargetMethod Select
+{
+	width: 580px;
+	margin: 0px 0px 0px 10px;
+	padding: 2px 0px 2px 0px;
+	float: left;
+}
+
+/* --------------------------------
+  テストパターン選択エリア
+-------------------------------- */
+
+.TestPattern
+{
+	width: 920px;
+	float: left;
+	margin: 6px 0px 10px 10px;
+}
+
+.TestPattern Table
+{
+	width: 740px;
+	float: left;
+	margin: 0px 0px 4px 10px;
+	border: 1px solid gray
+}
+
+.TestPattern td
+{
+	padding: 2px 0px 2px 0px;
+}
+
+/* --------------------------------
+  引数設定エリア
+-------------------------------- */
+
+.ArgumentSettings
+{
+	width: 920px;
+	float: left;
+	margin: 6px 0px 6px 10px;
+}
+
+.ArgumentSettings Table
+{
+	width: 910px;
+	float: left;
+	margin: 10px 0px 10px 0px;
+	border: 1px solid gray;
+	border-spacing: 2px;
+	border-collapse:collapse;
+}
+
+.ArgumentSettings td
+{
+	padding: 2px 4px 2px 4px;
+}
+
+.ArgumentSettingsHeader td
+{
+	padding: 1px 4px 1px 4px;
+	color: #FFFFFF;
+	background-color: #003399;
+}
+
+.ArgumentSettings Span
+{
+	width: 910px;
+	float: left;
+	margin: 0px 0px 10px 0px;
+	padding: 4px 2px 4px 2px;
+	border: 1px solid gray
+}
+
+/* --------------------------------
+  テストボタン配置エリア
+-------------------------------- */
+
+.ButtonArea
+{
+	width: 920px;
+	height: 36px;
+	float: left;
+	margin: 6px 0px 20px 10px;
+	float: left;
+}
+
+.ButtonArea Hr
+{
+	height: 3px;
+	width: 914px;
+	margin: 10px 70px 10px 0px;
+	float: left;
+	background-color: #003399;
+	text-align: left;
+}
+
+.ButtonExecTest
+{
+	border: none 0px #ffffff;
+	width: 120px;
+	height: 30px;
+	background-image: url('Images/btnExecTest.gif');
+}
+
+.ButtonExecTest_On
+{
+	border: none 0px #ffffff;
+	width: 120px;
+	height: 30px;
+	background-image: url('Images/btnExecTest_On.gif');
+}
+
+/* --------------------------------
+  戻り値出力エリア
+-------------------------------- */
+
+.ReturnValueArea
+{
+	width: 920px;
+	float: left;
+	margin: 6px 0px 6px 10px;
+    word-wrap:break-word;
+}
+
+.ReturnValueArea Span
+{
+	width: 740px;
+	min-height: 14px;
+	float: left;
+	margin: 0px 0px 10px 10px;
+	padding: 4px 2px 4px 2px;
+	border: 1px solid gray
+}
+
+.ReturnValueArea TextArea
+{
+	width: 740px;
+	height: 48px;
+	float: left;
+	margin: 0px 0px 10px 10px;
+	padding: 4px 2px 4px 2px;
+	border: 1px solid gray
+}
+
+/* --------------------------------
+  処理経過出力エリア
+-------------------------------- */
+
+.ReportingArea
+{
+	width: 920px;
+	float: left;
+	margin: 6px 0px 6px 10px;
+    word-wrap:break-word;
+}
+
+.ReportingArea Span
+{
+	width: 740px;
+	min-height: 14px;
+	float: left;
+	margin: 0px 0px 10px 10px;
+	padding: 4px 2px 4px 2px;
+	border: 1px solid gray
+}
+
+.ReportingArea TextArea
+{
+	width: 740px;
+	height: 100px;
+	float: left;
+	margin: 0px 0px 10px 10px;
+	padding: 4px 2px 4px 2px;
+	border: 1px solid gray
+}
+
+.ReportingArea Hr
+{
+	height: 3px;
+	width: 914px;
+	margin: 10px 0px 10px 0px;
+	float: left;
+	background-color: #003399;
+}
+
+/* --------------------------------
+  データ出力エリア
+-------------------------------- */
+
+.DataOutputArea
+{
+	width: 920px;
+	float: left;
+	margin: 6px 0px 6px 10px;
+}
+.DataOutputArea Hr
+{
+	height: 3px;
+	width: 910px;
+	float: left;
+	background-color: #003399;
+	text-align: left;
+}
+
+.DataOutputTableArea 
+{
+	width: 920px;
+	float: left;
+	margin: 10px 0px 10px 0px;
+	border-color: #003399;
+	border-style: solid;
+
+}
+
+.DataOutputTableArea Caption
+{
+	padding: 1px 1px 1px 10px;
+	color: #FFFFFF;
+	background-color: #6666FF;
+	text-align: left;
+	font-weight: bold;
+}
+.DataOutputTableArea Th
+{
+	padding: 1px 1px 1px 1px;
+	color: #FFFFFF;
+	background-color: #003399;
+	font-weight: normal;
+}
+
+/* --------------------------------
+  FreeTestPanelが配置されるFormに別途配置されるコントロールのコンテナとなるパネル
+-------------------------------- */
+
+.ExtraArea
+{
+	float: left;
+	margin: 6px 0px 6px 10px;
+}
+
+

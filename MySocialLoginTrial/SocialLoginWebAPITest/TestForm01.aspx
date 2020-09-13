@@ -16,7 +16,7 @@
             MethodSelectorStyle="DroptDownList" 
             OnAddTestClassController="FreeTestPanel1_AddTestClassController" 
             TargetMethodRepeatColumns="2" 
-            TargetTestPatternRepeatColumns="2" TargetClassCaption="Test Classes" TargetMethodCaption="Test Methods" TestFormTitle="Test form for External Logins" TestPatternCaption="Test Patterns">
+            TargetTestPatternRepeatColumns="2" TestFormTitle="Test form for External Logins" >
         </cc1:FreeTestPanel>
     </form>
 </body>

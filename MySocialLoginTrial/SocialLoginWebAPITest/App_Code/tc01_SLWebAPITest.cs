@@ -10,7 +10,7 @@ using EmotionSoft.ewd2.SimpleUT;
 namespace SocialLoginWebAPITest.App_Code
 {
 
-    [FreeTestClass("tc01.ソーシャルログインWebApiのテスト")]
+    [FreeTestClass("tc01.Test for Social Login Web Service")]
     public class tc01_SLWebAPITest: WebFreeTestFixture
     {
 
