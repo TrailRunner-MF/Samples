@@ -22,7 +22,7 @@ namespace SocialLoginWebAPITest.App_Code
 
         #region tm11_CallExternalLogins
         /// <summary>
-        /// .外部ログインキーとユーザーIDのバインド実行用ページへのPostを実行する
+        /// Request getting External-authentication information to 'MySocialLoginService'
         /// </summary>
         [FreeTestMethod("test01.Execute ExternalLogins-Order")]
         public void tm11_CallExternalLogins(string provider, string userID, string returnUrl)
@@ -40,7 +40,7 @@ namespace SocialLoginWebAPITest.App_Code
 
         #region tm12_CallOtherExternalLogins
         /// <summary>
-        /// .外部ログインキーとユーザーIDのバインド実行用ページへのPostを実行する
+        /// Request getting External-authentication information to 'OtherSocialLoginService'
         /// </summary>
         [FreeTestMethod("test02.Execute Other ExternalLogins-Order")]
         public void tm12_CallOtherExternalLogins (string provider, string userID, string returnUrl)

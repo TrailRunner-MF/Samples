@@ -1,16 +1,16 @@
 {
-  "OutsideAuthentication": {
-    "Google": {
-      "ClientId": "82855073130-2cjd9ck723a06fpkr9dfkds5mccho5f4.apps.googleusercontent.com",
-      "ClientSecret": "jxvdozyaT2rR2h_JbFCu14Eb"
-    },
-    "Facebook": {
-      "AppId": "2681311078811003",
-      "AppSecret": "c1b3141d6f0babf984c8437e6e240b2d"
-    },
-    "Microsoft": {
-      "ClientId": "4eaff1e7-fc10-4eaf-8fca-c8a67b959da0",
-      "ClientSecret": "wt15_31-bnRb9d5L~7~w4LD7i5g9q2u8sy"
+    "OutsideAuthentication": {
+        "Google": {
+            "ClientId": "***(set clientid of your google apps)***",
+            "ClientSecret": "***(set clientsecret of your google apps)***"
+        },
+        "Facebook": {
+            "AppId": "***(set appid of your microsft apps)***",
+            "AppSecret": "***(set appsecret of your microsft apps)***"
+        },
+        "Microsoft": {
+            "ClientId": "***(set clientid of your microsft apps)***",
+            "ClientSecret": "***(set clientsecret of your microsft apps)***"
+        }
     }
-  }
 }

@@ -41,3 +41,4 @@ C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Social
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\SocialLoginWebAPITest\obj\Debug\SocialLoginWebAPITest.csproj.CopyComplete
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\SocialLoginWebAPITest\obj\Debug\SocialLoginWebAPITest.dll
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\SocialLoginWebAPITest\obj\Debug\SocialLoginWebAPITest.pdb
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\SocialLoginWebAPITest\obj\Debug\SocialLoginWebAPITest.csprojAssemblyReference.cache
