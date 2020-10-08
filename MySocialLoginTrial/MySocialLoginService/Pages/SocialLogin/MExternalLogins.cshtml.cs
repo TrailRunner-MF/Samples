@@ -85,10 +85,22 @@ namespace MySocialLoginService.Pages.SocialLogin
             {
                 throw new InvalidOperationException($"Unexpected error occurred loading external login info.");
             }
-            var message = string.Format("Social Account for ProviderID: {0} and ProviderKey: {1} will bind to " + 
-                "Sight memeber with UserId: {2}, then redirect to {3}. " +
+
+            var mailaddress = string.Empty;
+            try
+            {
+                // どうやらOAuthの規約で認証時のユーザー情報はIdentityでは標準的にここに入ってくるらしい。
+                mailaddress = info.Principal.Claims.First().Subject.Claims.Where(c => c.Type.Contains("/identity/claims/emailaddress")).First().Value;
+            }
+            catch (Exception exp)
+            {
+                mailaddress = "(could not get because ... " + exp.Message + ")";
+            }
+
+            var message = string.Format("Social Account for ProviderID: {0} and ProviderKey: {1} and EMailAddress: {2} will bind to " +
+                "Sight memeber with UserId: {3}, then redirect to {4}. " +
                 "(This part is not implemented in this program.)",
-                info.LoginProvider, info.ProviderKey, userId, returnUrl); ;
+                info.LoginProvider, info.ProviderKey, mailaddress, userId, returnUrl); ;
             StatusMessage = message;
 
             // Clear the existing external cookie to ensure a clean login process
