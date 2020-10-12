@@ -1,16 +1,20 @@
 {
-  "OutsideAuthentication": {
-    "Google": {
-        "ClientId": "***(set clientid of your google apps)***",
-        "ClientSecret": "***(set clientsecret of your google apps)***"
-    },
-    "Facebook": {
-        "AppId": "***(set appid of your microsft apps)***",
-        "AppSecret": "***(set appsecret of your microsft apps)***"
-    },
-    "Microsoft": {
-        "ClientId": "***(set clientid of your microsft apps)***",
-        "ClientSecret": "***(set clientsecret of your microsft apps)***"
+    "OutsideAuthentication": {
+        "Google": {
+            "ClientId": "***(set clientid of your google apps)***",
+            "ClientSecret": "***(set clientsecret of your google apps)***"
+        },
+        "Facebook": {
+            "AppId": "***(set appid of your microsft apps)***",
+            "AppSecret": "***(set appsecret of your microsft apps)***"
+        },
+        "Microsoft": {
+            "ClientId": "***(set clientid of your microsft apps)***",
+            "ClientSecret": "***(set clientsecret of your microsft apps)***"
+        },
+        "LINE": {
+            "AppId": "***(set appid of your line apps)***",
+            "AppSecret": "***(set appsecret of your line apps)***"
+        }
     }
-  }
 }

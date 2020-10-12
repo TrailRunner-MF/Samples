@@ -68,6 +68,7 @@ namespace SocialLoginWebAPITest.App_Code
                 result.Add(new string[] { "Google",  userID, thisUrl, "Google account." });
                 result.Add(new string[] { "Facebook", userID, thisUrl, "Facebook account" });
                 result.Add(new string[] { "Microsoft", userID, thisUrl, "Microsoft account" });
+                result.Add(new string[] { "Line", userID, thisUrl, "LINE account" });
                 return result;
             }
         }

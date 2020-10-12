@@ -1,4 +1,5 @@
 using System;
+using LineAccountExtension;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -53,6 +54,14 @@ namespace MySocialLoginService
 
                     microsoftOptions.ClientId = msSec["ClientId"];
                     microsoftOptions.ClientSecret = msSec["ClientSecret"];
+                })
+                .AddLineAccount(lineOptions =>
+                {
+                    IConfigurationSection lineSec =
+                        Configuration.GetSection("OutsideAuthentication:LINE");
+
+                    lineOptions.AppId = lineSec["AppId"];
+                    lineOptions.AppSecret = lineSec["AppSecret"];
                 });
 
             // Add Session service.

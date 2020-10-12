@@ -174,3 +174,5 @@ C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\MySoci
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\MySocialLoginService\obj\Debug\netcoreapp3.1\MySocialLoginService.genruntimeconfig.cache
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\MySocialLoginService\obj\Debug\netcoreapp3.1\Razor\Pages\SocialLogin\MyExternalLogins.cshtml.g.cs
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\MySocialLoginService\obj\Debug\netcoreapp3.1\MySocialLoginService.csprojAssemblyReference.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\MySocialLoginService\bin\Debug\netcoreapp3.1\LineAccountExtension.dll
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\MySocialLoginService\bin\Debug\netcoreapp3.1\LineAccountExtension.pdb

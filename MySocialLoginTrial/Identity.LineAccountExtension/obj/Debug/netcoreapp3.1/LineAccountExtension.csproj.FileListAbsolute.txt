@@ -1,0 +1,8 @@
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\bin\Debug\netcoreapp3.1\LineAccountExtension.deps.json
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\bin\Debug\netcoreapp3.1\LineAccountExtension.dll
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\bin\Debug\netcoreapp3.1\LineAccountExtension.pdb
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\obj\Debug\netcoreapp3.1\LineAccountExtension.AssemblyInfoInputs.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\obj\Debug\netcoreapp3.1\LineAccountExtension.AssemblyInfo.cs
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\obj\Debug\netcoreapp3.1\LineAccountExtension.csproj.CoreCompileInputs.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\obj\Debug\netcoreapp3.1\LineAccountExtension.dll
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\Identity.LineAccountExtension\obj\Debug\netcoreapp3.1\LineAccountExtension.pdb
