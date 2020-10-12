@@ -1,0 +1,9 @@
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\bin\Debug\netcoreapp2.1\LineAccountExtension.deps.json
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\bin\Debug\netcoreapp2.1\LineAccountExtension.dll
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\bin\Debug\netcoreapp2.1\LineAccountExtension.pdb
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\obj\Debug\netcoreapp2.1\LineAccountExtension.csprojAssemblyReference.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\obj\Debug\netcoreapp2.1\LineAccountExtension.AssemblyInfoInputs.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\obj\Debug\netcoreapp2.1\LineAccountExtension.AssemblyInfo.cs
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\obj\Debug\netcoreapp2.1\LineAccountExtension.csproj.CoreCompileInputs.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\obj\Debug\netcoreapp2.1\LineAccountExtension.dll
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\LineAccountExtensions\Identity.LineAccountExtension\obj\Debug\netcoreapp2.1\LineAccountExtension.pdb

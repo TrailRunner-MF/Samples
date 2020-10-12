@@ -56,9 +56,9 @@ namespace SocialLoginWebAPITest.App_Code
         }
         #endregion
 
-        #region ExternalLoginBinderPattern
+        #region ExternalLoginTestPattern
         [FreeTestPattern("tm11_CallExternalLogins;tm12_CallOtherExternalLogins", true, false)]
-        public List<string[]> ExternalLoginBinderPattern
+        public List<string[]> ExternalLoginTestPattern
         {
             get
             {
@@ -72,6 +72,39 @@ namespace SocialLoginWebAPITest.App_Code
             }
         }
         #endregion
+
+
+        #region tm13_CallLineLogins
+        /// <summary>
+        /// LINEによる外部ログイン実行ページへのGET命令を発行する。
+        /// </summary>
+        [FreeTestMethod("test03.Execute Other LINE Login")]
+        public void tm13_CallLineLogins(string userID, string returnUrl)
+        {
+            string actionUrll = string.Format("https://localhost:44344/Account/LoginByLINE?userid={0}&returnUrl={1}",
+                userID, Server.UrlEncode(returnUrl));
+            RedirectOnNewWindow(actionUrll);
+        }
+        #endregion
+
+        #region CallLineLoginsPattern
+        [FreeTestPattern("tm13_CallLineLogins", true, false)]
+        public List<string[]> CallLineLoginsPattern
+        {
+            get
+            {
+                var thisUrl = this.Page.Request.Url.ToString();
+                var userID = "UID-0001";
+                var result = new List<string[]>();
+                result.Add(new string[] { userID, thisUrl, userID + "/ ここに戻る" });
+                thisUrl = "https://www.google.co.jp";
+                userID = "UID-0002";
+                result.Add(new string[] { userID, thisUrl, userID + "/ googleに戻る" });
+                return result;
+            }
+        }
+        #endregion
+
 
         #region GetResponseAsync (private)
         /// <summary>
