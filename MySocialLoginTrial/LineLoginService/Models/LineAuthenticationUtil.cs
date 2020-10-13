@@ -28,9 +28,18 @@ namespace LineLoginService.Models
         {
             var accessToken = await context.GetTokenAsync("access_token") ?? string.Empty;
             var providerKey = string.Empty;
+            var email = string.Empty;
             if (user.Identity.IsAuthenticated)
             {
                 providerKey = user.Claims.ToList<System.Security.Claims.Claim>()[0].Value;
+                if (user.Identities.First() != null)
+                {
+                    var claim_email = user.Identities.First().Claims.Where(c => c.Type.Contains("/identity/claims/emailaddress")).FirstOrDefault();
+                    if (claim_email != null)
+                    {
+                        email = claim_email.Value;
+                    }
+                }
             }
 
             var thismodel = new LineAuthenticationInfo
@@ -40,6 +49,7 @@ namespace LineLoginService.Models
                 ProviderID = "LINE",
                 ProviderKey = providerKey,
                 UserID = userID,
+                Email = email,
                 ReturnUrl = returnUrl,
             };
             return thismodel;

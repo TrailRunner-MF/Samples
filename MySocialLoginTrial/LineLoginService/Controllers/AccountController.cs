@@ -25,7 +25,6 @@ namespace LineLoginService.Controllers
 
         public IActionResult LoginByLINE(string userID, string returnUrl)
         {
-            // var redirectUrl = "https://localhost:44344/";
             var redirectUrl = "/Account/LoginCompleted";
             HttpContext.Session.SetString(USER_ID, userID ?? string.Empty);
             HttpContext.Session.SetString(RETURN_URL, returnUrl ?? string.Empty);

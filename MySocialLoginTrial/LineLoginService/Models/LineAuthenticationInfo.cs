@@ -21,6 +21,9 @@ namespace LineLoginService.Models
         [JsonProperty("userid")]
         public string UserID { get; set; }
 
+        [JsonProperty("email")]
+        public string Email { get; set; }
+
         [JsonProperty("returnurl")]
         public string ReturnUrl { get; set; }
 

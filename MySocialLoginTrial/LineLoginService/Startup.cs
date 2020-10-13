@@ -48,6 +48,7 @@ namespace LineLoginService
                 options.ResponseType = OpenIdConnectResponseType.Code;
                 options.UseTokenLifetime = true;
                 options.SaveTokens = true;
+                options.Scope.Add("email");
 
                 // Discovery ‘Š“–‚Ìİ’è‚ğ’Ç‰Á‚·‚é
                 options.Configuration = new OpenIdConnectConfiguration

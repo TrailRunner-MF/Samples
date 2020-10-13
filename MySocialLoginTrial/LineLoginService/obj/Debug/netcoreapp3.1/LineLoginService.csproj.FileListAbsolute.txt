@@ -43,11 +43,11 @@ C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\socialloginsettings.json
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\MySocialLoginTrial\LineLoginService\obj\Debug\netcoreapp3.1\LineLoginService.csproj.CoreCompileInputs.cache
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\AspNetCore.MyTrial\MySocialLogin\MySocialLoginTrial\LineLoginService\obj\Debug\netcoreapp3.1\LineLoginService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\LineLoginService.exe
-C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\socialloginsettings.json
+C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\LineLoginService.exe
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\LineLoginService.deps.json
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\LineLoginService.runtimeconfig.json
 C:\Users\Masatoshi\Source\Repos\TrailRunner-MF\Samples\MySocialLoginTrial\LineLoginService\bin\Debug\netcoreapp3.1\LineLoginService.runtimeconfig.dev.json

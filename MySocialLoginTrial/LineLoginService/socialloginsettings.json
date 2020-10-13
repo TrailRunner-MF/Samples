@@ -1,8 +1,8 @@
 {
     "OutsideAuthentication": {
         "Line": {
-            "ClientId": "***(set clientid of your lien apps)***",
-            "ClientSecret": "***(set clientsecret of your lien apps)***",
+            "ClientId": "(your line app client_id)",
+            "ClientSecret": "(your line app client_secret)",
             "Issuer": "https://access.line.me",
             "AuthorizationEndpoint": "https://access.line.me/oauth2/v2.1/authorize",
             "TokenEndpoint": "https://api.line.me/oauth2/v2.1/token"

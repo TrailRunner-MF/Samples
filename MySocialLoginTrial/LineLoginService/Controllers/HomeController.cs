@@ -51,6 +51,7 @@ namespace LineLoginService.Controllers
                 thismodel.AccessToken = lineauthinfo.AccessToken;
                 thismodel.ProviderKey = lineauthinfo.ProviderKey;
                 thismodel.UserID = lineauthinfo.UserID;
+                thismodel.Email = lineauthinfo.Email;
                 thismodel.ReturnUrl = lineauthinfo.ReturnUrl;
             };
            return View(thismodel);
